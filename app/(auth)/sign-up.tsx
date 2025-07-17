@@ -23,7 +23,6 @@ const SignUp = () => {
         name
       })
 
-      Alert.alert('Success', 'User signed up successfully.');
       router.replace('/');
     } catch (error: any) {
       Alert.alert('Error', error.message);
@@ -59,7 +58,7 @@ const SignUp = () => {
       />
 
       <CustomButton 
-        title='Sign In'
+        title='Sign Up'
         isLoading={isSubmitting}
         onPress={submit}
       />
